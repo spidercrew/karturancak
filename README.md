@@ -1,0 +1,2 @@
+# karturancak
+karturancak
