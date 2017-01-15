@@ -1,0 +1,15 @@
+
+<div style="margin-bottom: 2px;">
+<div style="margin-top: 5px; text-align: left;">
+<input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Tutup'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Buka'; }" style="font-size: 12px; margin-top: 5px; width: 60px;" type="button" value="Buka" /></div>
+<div style="border-color: rgb(0, 0, 0); border-style: solid; border-width: 2px 2px 2px 20px; margin: 0px; padding: 6px;">
+
+Memindahkan Gambar Header Blog ke Tengah
+
+<div style="display: none;">
+
+1
+
+</div>
+</div>
+</div>
