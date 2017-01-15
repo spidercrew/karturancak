@@ -1,0 +1,40 @@
+//<![CDATA[
+function tabtampil_oom(TPID, id)
+{
+  var Tabtampil = document.getElementById(TPID);
+  var TTs = Tabtampil.firstChild;
+  while (TTs.className != "TTs" ) TTs = TTs.nextSibling;
+  var TT = TTs.firstChild;
+  var i   = 0;
+  do
+  {
+    if (TT.tagName == "A")
+    {
+      i++;
+      TT.href      = "javascript:tabtampil_ubah('"+TPID+"', "+i+");";
+      TT.className = (i == id) ? "Active" : "";
+      TT.blur();
+    }
+  }
+  while (TT = TT.nextSibling);
+  var Halamans = Tabtampil.firstChild;
+  while (Halamans.className != 'Halamans') Halamans = Halamans.nextSibling;
+  var Halaman = Halamans.firstChild;
+  var i    = 0;
+  do
+  {
+    if (Halaman.className == 'Halaman')
+    {
+      i++;
+      if (Halamans.offsetHeight) Halaman.style.height = (Halamans.offsetHeight-2)+"px";
+      Halaman.style.overflow = "auto";
+      Halaman.style.display  = (i == id) ? 'block' : 'none';
+    }
+  }
+  while (Halaman = Halaman.nextSibling);
+}
+function tabtampil_ubah(TPID, id) { tabtampil_oom(TPID, id);
+}
+function tabtampil_inisial(TPID) { tabtampil_oom(TPID,  1);
+document.write('');}
+//]]>
