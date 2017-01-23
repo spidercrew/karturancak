@@ -1,5 +1,5 @@
 ul.abt-sidebar-slider *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
-ul.abt-sidebar-slider{font:normal normal 10px Verdana,Geneva,sans-serif}
+ul.abt-sidebar-slider{font:normal normal 12px Verdana,Geneva,sans-serif}
 ul.abt-sidebar-slider,ul.abt-sidebar-slider li{margin:0;padding:0;list-style:none;position:relative}
 ul.abt-sidebar-slider{width:100%;height:500px}
 ul.abt-sidebar-slider li{height:24.5%;position:absolute;padding:0;width:49.5%;float:left;overflow:hidden;display:none}
