@@ -10,7 +10,7 @@ ul.abt-sidebar-slider li:nth-child(2){left:0;top:50%}
 ul.abt-sidebar-slider li:nth-child(3){left:50.5%;top:50%}
 ul.abt-sidebar-slider li:nth-child(4){width:100%;left:0;top:75%}
 ul.abt-sidebar-slider  .overlayx,ul.abt-sidebar-slider li{-webkit-transition:all .4s ease-in-out;-moz-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;-ms-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
-ul.abt-sidebar-slider .overlayx{width:100%;height:100%;position:absolute;z-index:2;left:0;top:0;background-image:url(http://1.bp.blogspot.com/-FtnGJHMcWH8/UIV3IE-aaJI/AAAAAAAAGHs/WvLypnWxg5A/s1600/linebg-fade.png);background-position:50% 50%;background-repeat:repeat-x}
+ul.abt-sidebar-slider .overlayx{width:100%;height:100%;position:absolute;z-index:2;left:0;top:0;background-image:url(https://1.bp.blogspot.com/-FtnGJHMcWH8/UIV3IE-aaJI/AAAAAAAAGHs/WvLypnWxg5A/s1600/linebg-fade.png);background-position:50% 50%;background-repeat:repeat-x}
 ul.abt-sidebar-slider .overlayx,ul.abt-sidebar-slider img{border:2px solid #0000ff;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px}
 ul.abt-sidebar-slider li:nth-child(1) .overlayx{background-position:50% 25%}
 ul.abt-sidebar-slider .overlayx:hover{-ms-filter:"progid:DXImageTransform.Microsoft. Alpha(Opacity=10)";filter:alpha(opacity=10);-khtml-opacity:0.1;-moz-opacity:0.1;opacity:0.1}
