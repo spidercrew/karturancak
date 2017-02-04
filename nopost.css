@@ -1,0 +1,18 @@
+<style type="text/css">
+.seocips-wp-sidebar {display: none !important;}
+.seocips-wp2 {display: none !important;}
+.pagebutton-nextprevious {display: none !important;}
+#footer-wrapper {display: none !important;}
+#menu {display: none !important;}
+#related-posts-wrapper {display: none !important;}
+#header {display: none !important;}
+.navwrap {display: none !important;}
+.header-wrapper {display: none !important;}
+.seocips-wp-main { background:#eee; position:relative; max-width:1050px; margin:0 auto; border:1px solid #444; box-shadow:1px 1px 5px rgba(0,0,0,.8); }
+.seocips-picfooter {display: none !important;}
+.share-post {display: none !important;}
+.post table { background:#eee; width:100%; border:1px solid #000; box-shadow:0px 0px 10px rgba(0,0,0,.8) inset;  }
+#credit {display: none !important;}
+.seocips-wp-main {width: 100%!important; float: center; margin: 0;
+.post-body {width:100%}
+</style>
